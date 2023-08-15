@@ -13,11 +13,49 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="./images/banklogo.png" type="image/x-icon">
-
 </head>
 
-<body>
+<body class="bg-gray-400">
+    <header class="text-center mt-10">
+        <h1 class="text-5xl font-normal">Bank<span class="text-red-500 font-bold">Calculation</span>!!!</h1>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-yellow-400 rounded-xl border-2 border-black p-8">
+                    <h4 class="text-3xl font-bold">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span> </h2>
+                </div>
+                <div class="bg-red-400 rounded-xl border-2 border-black p-8">
+                    <h4 class="text-3xl font-bold">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span> </h2>
+                </div>
+                <div class="bg-blue-400 rounded-xl border-2 border-black p-8">
+                    <h4 class="text-3xl font-bold">Balance</h4>
+                    <h2 class="text-5xl">$<span id="balance-total">1240</span> </h2>
+                </div>
+            </div>
+        </section>
 
+        <section class="mt-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-400 rounded-xl border-2 border-black p-8">
+                    <h4 class="text-3xl font-bold">Deposit</h4>
+                    <input type="text" id="deposit-field" class="rounded-xl px-4 py-2 mt-2 w-full mx-auto text-black text-2xl" placeholder="$ Amount you want to Deposit">
+                    <button id="btn-deposit" class="mt-4 px-4 py-1 bg-yellow-500 text-black font-semibold text-xl rounded-xl border-2 border-black hover:bg-red-900 hover:text-white">Deposit</button>
+                </div>
+                <div class="bg-indigo-400 rounded-xl border-2 border-black p-8">
+                    <h4 class="text-3xl font-bold">Withdraw</h4>
+                    <input type="text" id="withdraw-field" class="rounded-xl px-4 py-2 mt-2 w-full mx-auto text-black text-2xl" placeholder="$ Amount you want to Withdraw">
+                    <button id="btn-withdraw" class="mt-4 px-4 py-1 bg-green-500 text-black font-semibold text-xl rounded-xl border-2 border-black hover:bg-yellow-400 hover:text-red-600">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
     <script src="./javascript/initial.js"></script>
 </body>
 
