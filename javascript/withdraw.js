@@ -22,3 +22,8 @@
 
 
 /* You can Follow the Above method to do manually. Otherwise you can follow the Bottom Method for Ease */
+
+
+document.getElementById('btn-withdraw').addEventListener('click', function(){
+   
+})
