@@ -24,6 +24,15 @@
 /* You can Follow the Above method to do manually. Otherwise you can follow the Bottom Method for Ease */
 
 
-document.getElementById('btn-withdraw').addEventListener('click', function(){
-   
+document.getElementById('btn-withdraw').addEventListener('click', function () {
+    const newWithdrawAmount = getInputValueById('withdraw-field');
+    const previousWithdrawTotal = getTextElementValueById('withdraw-total');
+    const newWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
+
+    setTextElementValueById('withdraw-total', newWithdrawAmount);
+
+    const previousBalanceTotal = getTextElementValueById('balance-total');
+    const newTotalBalanceAmount = previousBalanceTotal - newWithdrawTotal;
+
+    setTextElementValueById('balance-total', newTotalBalanceAmount);
 })

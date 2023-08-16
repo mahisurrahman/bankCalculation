@@ -23,15 +23,15 @@
 
 /* You can Follow the Above method to do manually. Otherwise you can follow the Bottom Method for Ease */
 
-document.getElementById('btn-deposit').addEventListener('click', function(){
+document.getElementById('btn-deposit').addEventListener('click', function () {
     const newDepositAmount = getInputValueById('deposit-field');
     const previousDepositTotal = getTextElementValueById('deposit-total');
     const newDepositTotal = previousDepositTotal + newDepositAmount;
-    
+
     setTextElementValueById('deposit-total', newDepositTotal);
 
     const previousBalanceTotal = getTextElementValueById('balance-total');
     const newBalanceTotal = newDepositTotal + previousBalanceTotal;
 
-    setTextElementValueById ('balance-total', newBalanceTotal);
+    setTextElementValueById('balance-total', newBalanceTotal);
 })
